@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "flatlightstools:pale_yellow_vertical_edge"
+    }
+  ],
+  "result": {
+    "item": "flatlightstools:pale_yellow_horizontal_edge",
+    "count": 1
+  }
+}

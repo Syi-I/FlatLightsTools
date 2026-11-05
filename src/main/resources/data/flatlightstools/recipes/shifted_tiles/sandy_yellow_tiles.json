@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    " # ",
+    "X X"
+  ],
+  "key": {
+    "#": {
+      "item": "flatlightstools:sandy_yellow_flatblock"
+    },
+    "X": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "flatlightstools:sandy_yellow_tiles",
+    "count": 8
+  }
+}

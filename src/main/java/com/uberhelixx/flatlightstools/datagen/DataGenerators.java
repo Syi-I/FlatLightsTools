@@ -1,0 +1,59 @@
+package com.uberhelixx.flatlightstools.datagen;
+
+import com.uberhelixx.flatlightstools.FlatLightsTools;
+import com.uberhelixx.flatlightstools.util.MiscUtils;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.common.data.ForgeAdvancementProvider;
+import net.minecraftforge.data.event.GatherDataEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
+
+@Mod.EventBusSubscriber(modid = FlatLightsTools.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+public class DataGenerators {
+    @SubscribeEvent
+    public static void gatherData(GatherDataEvent event) {
+        DataGenerator generator = event.getGenerator();
+        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+        PackOutput packOutput = generator.getPackOutput();
+        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
+        
+        generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
+        
+
+        MiscUtils.infoLog("Generating block tags...");
+        ModBlockTagsProvider blockTagGenerator = generator.addProvider(event.includeServer(), new ModBlockTagsProvider(packOutput, lookupProvider, existingFileHelper));
+        MiscUtils.infoLog("Finished generating block tags.");
+        
+        MiscUtils.infoLog("Generating item tags...");
+        generator.addProvider(event.includeServer(), new ModItemTagsProvider(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
+        MiscUtils.infoLog("Finished generating item tags.");
+        
+        MiscUtils.infoLog("Generating loot tables...");
+        generator.addProvider(event.includeServer(), new ModLootTableProvider(packOutput));
+        MiscUtils.infoLog("Finished generating loot tables.");
+        
+        MiscUtils.infoLog("Generating recipes...");
+        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
+        MiscUtils.infoLog("Finished generating recipes.");
+        
+        MiscUtils.infoLog("Generating advancements...");
+        generator.addProvider(event.includeClient(), new ForgeAdvancementProvider(packOutput, lookupProvider, existingFileHelper, List.of(new ModAdvancementProvider())));
+        MiscUtils.infoLog("Finished generating advancements.");
+        
+        /*
+        just ended up doing these two manually since the structure loot bugs out from not understanding forge tags
+        and if I automate just the one then it double generates the forge:loot_modifiers/global_loot_modifier.json
+        between my data and the generated data
+        */
+        //MiscUtils.infoLog("Generating global loot modifiers...");
+        //generator.addProvider(event.includeClient(), new ModGlobalLootModifierProvider(packOutput));
+        //MiscUtils.infoLog("Finished generating global loot modifiers...");
+    }
+}

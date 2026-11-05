@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "###",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "flatlightstools:sandy_yellow_flatblock"
+    }
+  },
+  "result": {
+    "item": "flatlightstools:sandy_yellow_panel",
+    "count": 24
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "flatlightstools:indigo_flatblock"
+    }
+  },
+  "result": {
+    "item": "flatlightstools:indigo_pillar",
+    "count": 48
+  }
+}

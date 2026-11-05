@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "#": {
+      "item": "flatlightstools:hue_shifting_vial"
+    },
+    "X": {
+      "item": "flatlightstools:lime_flatblock"
+    }
+  },
+  "result": {
+    "item": "flatlightstools:cerulean_flatblock",
+    "count": 8
+  }
+}

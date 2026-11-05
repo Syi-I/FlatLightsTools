@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "flatlightstools:pastel_green_flatblock"
+    }
+  },
+  "result": {
+    "item": "flatlightstools:pastel_green_vertical_edge",
+    "count": 64
+  }
+}

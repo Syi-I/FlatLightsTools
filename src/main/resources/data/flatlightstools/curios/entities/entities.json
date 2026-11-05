@@ -1,0 +1,4 @@
+{
+  "entities": ["player"],
+  "slots": ["flatlightstools.curios.cube", "flatlightstools.curios.prism", "flatlightstools.curios.sphere"]
+}

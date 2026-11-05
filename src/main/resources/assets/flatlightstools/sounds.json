@@ -1,0 +1,51 @@
+{
+  "squeak": {
+    "category": "player",
+    "subtitle": "flatlightstools.squeak",
+    "sounds": [
+      "flatlightstools:squeak"
+    ]
+  },
+  "mode_switch": {
+    "category": "player",
+    "subtitle": "flatlightstools.mode_switch",
+    "sounds": [
+      "flatlightstools:mode_switch"
+    ]
+  },
+  "void_projectile_shot": {
+    "category": "player",
+    "subtitle": "flatlightstools.void_projectile_shot",
+    "sounds": [
+      "flatlightstools:void_projectile_shot"
+    ]
+  },
+  "void_fizzle": {
+    "category": "player",
+    "subtitle": "flatlightstools.void_fizzle",
+    "sounds": [
+      "flatlightstools:void_fizzle"
+    ]
+  },
+  "void_hum": {
+    "category": "player",
+    "subtitle": "flatlightstools.void_hum",
+    "sounds": [
+      "flatlightstools:void_hum"
+    ]
+  },
+  "crafting_table_interact": {
+    "category": "player",
+    "subtitle": "flatlightstools.crafting_table_interact",
+    "sounds": [
+      "flatlightstools:crafting_table_interact"
+    ]
+  },
+  "gravity_lift_hum": {
+    "category": "player",
+    "subtitle": "flatlightstools.gravity_lift_hum",
+    "sounds": [
+      "flatlightstools:gravity_lift_hum"
+    ]
+  }
+}

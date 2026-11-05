@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "## ",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "flatlightstools:magenta_flatblock"
+    }
+  },
+  "result": {
+    "item": "flatlightstools:magenta_horizontal_edge",
+    "count": 64
+  }
+}

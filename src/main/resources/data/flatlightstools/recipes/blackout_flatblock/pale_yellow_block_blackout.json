@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "flatlightstools:pale_yellow_flatblock"
+    },
+    {
+      "item": "flatlightstools:blackout_powder"
+    }
+  ],
+  "result": {
+    "item": "flatlightstools:pale_yellow_flatblock_blackout",
+    "count": 1
+  }
+}

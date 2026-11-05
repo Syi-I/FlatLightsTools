@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "flatlightstools:dark_purple_vertical_edge"
+    }
+  ],
+  "result": {
+    "item": "flatlightstools:dark_purple_horizontal_edge",
+    "count": 1
+  }
+}

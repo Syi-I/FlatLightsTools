@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    " X ",
+    " # "
+  ],
+  "key": {
+    "X": {
+      "item": "flatlightstools:prismatic_ingot"
+    },
+    "#": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "flatlightstools:prismatic_sword",
+    "count": 1
+  }
+}

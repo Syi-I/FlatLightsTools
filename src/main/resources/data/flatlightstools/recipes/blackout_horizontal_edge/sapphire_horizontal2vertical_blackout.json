@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "flatlightstools:sapphire_vertical_edge_blackout"
+    }
+  ],
+  "result": {
+    "item": "flatlightstools:sapphire_horizontal_edge_blackout",
+    "count": 1
+  }
+}

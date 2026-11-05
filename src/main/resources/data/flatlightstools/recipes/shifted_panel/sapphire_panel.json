@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "###",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "flatlightstools:sapphire_flatblock"
+    }
+  },
+  "result": {
+    "item": "flatlightstools:sapphire_panel",
+    "count": 24
+  }
+}

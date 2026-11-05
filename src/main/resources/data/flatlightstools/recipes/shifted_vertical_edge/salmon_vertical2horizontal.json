@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "flatlightstools:salmon_horizontal_edge"
+    }
+  ],
+  "result": {
+    "item": "flatlightstools:salmon_vertical_edge",
+    "count": 1
+  }
+}

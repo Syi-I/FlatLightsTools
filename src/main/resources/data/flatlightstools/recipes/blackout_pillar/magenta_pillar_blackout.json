@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "flatlightstools:magenta_pillar"
+    },
+    {
+      "item": "flatlightstools:blackout_powder"
+    }
+  ],
+  "result": {
+    "item": "flatlightstools:magenta_pillar_blackout",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "flatlightstools:spectralizer",
+  "ingredients": [
+    {
+      "item": "flatlightstools:helmet_core"
+    },
+    {
+      "item": "flatlightstools:prisma_nucleus"
+    },
+    {
+      "item": "flatlightstools:prisma_nucleus"
+    },
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "tag": "forge:ingots/netherite"
+    }
+  ],
+  "output": {
+    "item": "flatlightstools:prismatic_helmet"
+  }
+}

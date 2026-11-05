@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "flatlightstools:pink_flatblock"
+    }
+  },
+  "result": {
+    "item": "flatlightstools:pink_pillar",
+    "count": 48
+  }
+}

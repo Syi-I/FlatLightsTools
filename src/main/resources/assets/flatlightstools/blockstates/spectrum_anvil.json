@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "flatlightstools:block/spectrum_anvil",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "flatlightstools:block/spectrum_anvil",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "flatlightstools:block/spectrum_anvil"
+    },
+    "facing=south": {
+      "model": "flatlightstools:block/spectrum_anvil",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "flatlightstools:lime_flatblock"
+    }
+  },
+  "result": {
+    "item": "flatlightstools:lime_pillar",
+    "count": 48
+  }
+}

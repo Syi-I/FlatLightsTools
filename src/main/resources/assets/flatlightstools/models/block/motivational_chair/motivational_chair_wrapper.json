@@ -1,0 +1,11 @@
+{
+  "loader": "forge:obj",
+  "flip-v": true,
+  "ambientToFullbright": false,
+  "ambientocclusion": false,
+  "materialLibraryOverride": "flatlightstools:models/block/motivational_chair/motivational_chair.mtl",
+  "model" : "flatlightstools:models/block/motivational_chair/motivational_chair.obj",
+  "textures": {
+    "particle": "flatlightstools:block/flatblock/white_flatblock"
+  }
+}

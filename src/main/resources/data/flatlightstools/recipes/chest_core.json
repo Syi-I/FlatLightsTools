@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "flatlightstools:prismatic_ingot"
+    }
+  },
+  "result": {
+    "item": "flatlightstools:chest_core",
+    "count": 1
+  }
+}
